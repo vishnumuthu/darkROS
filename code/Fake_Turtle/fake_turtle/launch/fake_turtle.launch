@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- Start the Gazebo controller -->
+  <include file="$(find arax_gazebo)/launch/arax_gazebo.launch" />
+
+  <!-- Start the controller for autonomus navigation-->
+  <include file="$(find turtlebot_gazebo)/launch/amcl_demo.launch"> 
+    <arg name="map_file" value="$(find arax_gazebo)/maps/arax_map.yaml"/>
+  </include>
+
+  <include file="$(find frontier_exploration)/launch/no_global_map.launch" />
+
+  <!-- RViz -->
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fake_turtle)/rviz/fake_turtle.rviz"/>
+  
+</launch>

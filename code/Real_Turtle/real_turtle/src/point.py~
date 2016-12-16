@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+
+import rospy
+from geometry_msgs.msg import PointStamped,Point
+from std_msgs.msg import Header
+
+def point():
+    pub = rospy.Publisher('/clicked_point', Point, queue_size=10)
+    rospy.init_node('point', anonymous=True)
+    rate = rospy.Rate(10) # 10hz
+    point1 = Point(3.000, 3.000, 0.000)
+
+    rate.sleep()
+
+if __name__ == '__main__':
+    try:
+        point()
+    except rospy.ROSInterruptException:
+        pass
