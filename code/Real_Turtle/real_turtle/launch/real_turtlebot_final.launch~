@@ -8,6 +8,15 @@
     <arg name="args" value="--delete_db_on_start"/>
   </include>
 
+    <!-- start talk-->
+  <include file="$(find real_turtle)/launch/turtle_talk.launch" />
+
+    <!-- set points for boundry-->
   <include file="$(find frontier_exploration)/launch/no_global_map.launch" />
-  
+
+    <!-- talk to go-->
+  <include file="$(find frontier_exploration)/launch/no_global_map.launch" />
+
+    <!-- Start detection for bin-->
+  <include file="$(find ar_track_alvar)/launch/pr2_indiv.launch" />
 </launch>

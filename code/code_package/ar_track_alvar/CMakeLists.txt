@@ -112,6 +112,10 @@ add_executable(individualMarkers nodes/IndividualMarkers.cpp)
 target_link_libraries(individualMarkers ar_track_alvar kinect_filtering ${catkin_LIBRARIES})
 add_dependencies(individualMarkers ${PROJECT_NAME}_gencpp ${GENCPP_DEPS})
 
+add_executable(marker_turtle nodes/marker_turtle.cpp)
+target_link_libraries(marker_turtle ar_track_alvar kinect_filtering ${catkin_LIBRARIES})
+add_dependencies(marker_turtle ${PROJECT_NAME}_gencpp ${GENCPP_DEPS})
+
 add_executable(individualMarkersNoKinect nodes/IndividualMarkersNoKinect.cpp)
 target_link_libraries(individualMarkersNoKinect ar_track_alvar ${catkin_LIBRARIES})
 add_dependencies(individualMarkersNoKinect ${PROJECT_NAME}_gencpp  ${GENCPP_DEPS})

@@ -1,0 +1,2 @@
+# darkROS
+Title - 3D localization and classification of trash object for mobile cleaning robots The main objective of the project is to separate the trash from a road side environment or an after party site. The process is designed that the robot is programmed to navigate and search the area for path and detecting object. Later, after detecting trash they are classified into three sections like paper cup, can or thin and the organic like leaf.

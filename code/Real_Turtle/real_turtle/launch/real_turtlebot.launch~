@@ -1,18 +1,18 @@
 <launch>
 
   <!-- Start the turtlebot -->
-  <include file="$(find turtlebot_bringup)/launch/munimal.launch" />
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch" />
 
   <!-- Start the controller for autonomus navigation-->
-  <include file="$(find real_turtlebot)/launch/rtabmapping.launch"> 
+  <include file="$(find real_turtle)/launch/rtabmapping.launch"> 
     <arg name="args" value="--delete_db_on_start"/>
   </include>
 
   <include file="$(find frontier_exploration)/launch/no_global_map.launch" />
 
-  <!-- Set the points for navigation -->
-  <node pkg="araxilor" type="araxilor.py" name="araxilor" output="screen"/>  
-  <!-- RViz -->
-   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fake_turtle)/rviz/fake_turtle.rviz"/>
+  <!-- Set the points for navigation 
+  <node pkg="real_turtle" type="point.py" name="point" output="screen"/>  -->
+  <!-- RViz
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fake_turtle)/rviz/fake_turtle.rviz"/>  -->
   
 </launch>

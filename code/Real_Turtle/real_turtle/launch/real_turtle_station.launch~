@@ -5,6 +5,6 @@
 
 
   <!-- RViz -->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find real_turtle)/rviz/turtlebot_navigation.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rtabmap_ros)/launch/config/turtlebot_navigation.rviz"/>
   
 </launch>
