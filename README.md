@@ -16,7 +16,9 @@ sudo apt-get install ros-indigo-turtlebot-simulator
 ```
 
 Weblink:
+
 http://gazebosim.org/tutorials?tut=ros_installing
+
 http://wiki.ros.org/turtlebot_simulator
 
 ## Real turtlebot section:
@@ -37,6 +39,7 @@ sudo apt-get install ros-indigo-rtabmap-ros
 ```
 
 Weblink:
+
 http://wiki.ros.org/rtabmap_ros/Tutorials/MappingAndNavigationOnTurtlebot
 
 
@@ -49,6 +52,7 @@ git clone https://github.com/paulbovbel/frontier_exploration.git
 ```
 
 Weblink:
+
 http://wiki.ros.org/frontier_exploration
 
 ### Installing Object Recognition Packages:
@@ -82,10 +86,15 @@ git clone http://github.com/wg-perception/object_recognition_ros_visualization
 git clone https://github.com/wg-perception/ork_tutorials
 ```
 weblink:
+
 http://wg-perception.github.io/object_recognition_core/install.html#install
+
 http://wg-perception.github.io/object_recognition_core/infrastructure/couch.html#object-recognition-core-db
+
 https://wg-perception.github.io/ork_tutorials/tutorial01/tutorial.html
+
 https://wg-perception.github.io/ork_tutorials/tutorial02/tutorial.html
+
 http://wg-perception.github.io/capture/index.html#ork-capture
 
 ### AR tag tracker:
@@ -95,6 +104,7 @@ Pre-install (Note:The modified code is placed inside the DarkROS):
 Git clone https://github.com/sniekum/ar_track_alvar.git
 ```
 Weblink:
+
 http://wiki.ros.org/ar_track_alvar
 
 ### Speech:
@@ -107,6 +117,7 @@ sudo apt-get install festvox-don
 ```
 
 Weblink:
+
 http://wiki.ros.org/sound_play
 
 # Working:
