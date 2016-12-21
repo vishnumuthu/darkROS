@@ -98,6 +98,7 @@ https://wg-perception.github.io/ork_tutorials/tutorial02/tutorial.html
 http://wg-perception.github.io/capture/index.html#ork-capture
 
 ### AR tag tracker:
+Used to detect the trash can using AR tag.
 
 Pre-install (Note:The modified code is placed inside the DarkROS):
 ```
@@ -108,6 +109,7 @@ Weblink:
 http://wiki.ros.org/ar_track_alvar
 
 ### Speech:
+Used to give voice for the turtlebot.
 
 Pre-install:
 ```
@@ -122,31 +124,38 @@ http://wiki.ros.org/sound_play
 
 # Working:
 ## Simulation:
+Use the command for the Gazebo to start up.
 ```
 Roslaunch fake_turtle fake_turtle.launch
 ```
-Use the command for the Gazebo to start up.
 
 ## Real Time:
 ### Adding the Database:
+Use the command for creating the ID for the database with the object name.
 ```
 rosrun object_recognition_core object_add.py -n "<name>" -d "<details>" --commit
+```
+Use the command to upload the mesh file from stl or from bag file. 
+```
 rosrun object_recognition_core mesh_add.py <add the ID code of DB> <path to stl file> --commit (or)
 rosrun object_recognition_capture upload -i <bag file> -n '<name>' -d <detail> --commit
 ```
 
 ### Training the Database:
+Use the command for training the database to detect the real object.
 ```
 rosrun object_recognition_core training -c `rospack find object_recognition_linemod`/conf/training.ork
 ```
 
 ## TurtleBot:
+Use the command in the turtlebot for all the process to start at once.
 ```
 Roslaunch real_turtle real_turtlebot.launch (or)
 Roslaunch real_turtle real_turtlebot1.launch (or)
 Roslaunch real_turtle real_turtlebot_final.launch 
 ```
 ## Workstation:
+Use the command in the workstation for RVIZ.
 ```
 Roslaunch real_turtle real_turtlebot_station.launch
 ```
