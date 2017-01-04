@@ -1,6 +1,6 @@
 <launch>
 
-  <!-- Set to talk -->
-  <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen"/>  
+  <!-- Set to talk
+  <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen"/>   -->
   <node pkg="real_turtle" type="turtle_talk.py" name="turtle_talk" output="screen"/> 
 </launch>
