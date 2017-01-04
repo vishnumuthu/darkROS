@@ -104,7 +104,7 @@ Used to detect the trash can using AR tag.
 
 Pre-install (Note:The modified code is placed inside the DarkROS):
 ```
-Git clone https://github.com/sniekum/ar_track_alvar.git
+git clone https://github.com/sniekum/ar_track_alvar.git
 ```
 Weblink:
 
@@ -132,13 +132,13 @@ To run this project, please follow the following steps.
 ### Simulation:
 Use the command for the Gazebo to start up.
 ```
-Roslaunch fake_turtle fake_turtle.launch
+roslaunch fake_turtle fake_turtle.launch
 ```
 
 ### Real Time:
 ```
-Roslaunch real_turtle real_turtlebot.launch
-Roslaunch rtabmap_ros demo_turtlebot_rviz.launch
+roslaunch real_turtle real_turtlebot.launch
+roslaunch rtabmap_ros demo_turtlebot_rviz.launch
 ```
 
 ## Detection And Classification:
@@ -167,7 +167,7 @@ rosrun object_recognition_core detection -c  `rospack find object_recognition_ t
 
 ### Test The Tag tracker:
 ```
-Roslaunch ar_tracker_alvar pr2_indiv. launch
+roslaunch ar_tracker_alvar pr2_indiv. launch
 ```
 
 ## Running the Project
@@ -175,12 +175,12 @@ Roslaunch ar_tracker_alvar pr2_indiv. launch
 ### TurtleBot:
 Use the command in the turtlebot for all the process to start at once.
 ```
-Roslaunch real_turtle real_turtlebot.launch (or)
-Roslaunch real_turtle real_turtlebot1.launch (or)
-Roslaunch real_turtle real_turtlebot_final.launch 
+roslaunch real_turtle real_turtlebot.launch (or)
+roslaunch real_turtle real_turtlebot1.launch (or)
+roslaunch real_turtle real_turtlebot_final.launch 
 ```
 ### Workstation:
 Use the command in the workstation for RVIZ.
 ```
-Roslaunch real_turtle real_turtlebot_station.launch
+roslaunch real_turtle real_turtle_station.launch
 ```
